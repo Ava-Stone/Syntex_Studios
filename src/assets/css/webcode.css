@@ -1,0 +1,57 @@
+.webcode{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0px;
+    background-image: url("../images/herobg.png");
+}
+
+.webcode-cont{
+    width: 70%;
+    background-size: 100%;
+    background: url("../images/Rectangle\ 14.png");
+    border-radius: 32px;
+    height: 700px;
+    position: relative;
+    padding: 10px;
+    padding-top: 30px !important;
+}
+
+.webcode-cont1{
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    left: -60px;
+}
+
+.webcode-cont h1{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+    color: rgba(159, 73, 171, 1);
+    text-align: right;
+}
+.webcode-cont2{
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .webcode-cont{
+        display: none;
+    }
+    .webcode-cont2{
+        display: flex;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .webcode-cont{
+        width: 90%;
+    }
+    .webcode-cont2{
+        width: 95% !important;
+    }
+    
+}

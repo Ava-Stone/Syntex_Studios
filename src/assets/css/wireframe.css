@@ -1,0 +1,96 @@
+.wireframe {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.logoscreen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.logo{
+    max-width: auto;
+    width: 150px;
+}
+.poly1 {
+    position: absolute;
+    width: 100%;
+    height: 320px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    animation: slideDownFromCenter 3s ease-in-out forwards;
+}
+
+.poly2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 320px;
+    animation: slideUpFromCenter 3s ease-in-out forwards;
+}
+
+.poly3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100vh;
+    animation: slideLeftFromCenter 3s ease-in-out forwards;
+}
+
+.poly4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100vh;
+    animation: slideRightFromCenter 3s ease-in-out forwards;
+}
+
+/* Keyframe animations (reverse to start from center) */
+
+@keyframes slideDownFromCenter {
+    0% {
+        transform: translateY(0); /* Start at center */
+    }
+    100% {
+        transform: translateY(100%); /* End at bottom */
+    }
+}
+
+@keyframes slideUpFromCenter {
+    0% {
+        transform: translateY(0); /* Start at center */
+    }
+    100% {
+        transform: translateY(-100%); /* End at top */
+    }
+}
+
+@keyframes slideLeftFromCenter {
+    0% {
+        transform: translateX(0); /* Start at center */
+    }
+    100% {
+        transform: translateX(-100%); /* End at left */
+        
+    }
+}
+
+@keyframes slideRightFromCenter {
+    0% {
+        transform: translateX(0); /* Start at center */
+    }
+    100% {
+        transform: translateX(100%); /* End at right */
+    }
+}
+
+

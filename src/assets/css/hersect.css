@@ -1,0 +1,190 @@
+.herosect{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    height: 100vh;
+    margin-top: 70px !important;
+    background-image: url("../images/herobg.png");
+}
+
+
+
+
+
+.herocontent img{
+    width: 30%;
+}
+
+.logosect{
+    position: relative;
+    margin-bottom: 20px;
+}
+.vect1, #vect1{
+    width: 120px;
+    
+}
+.vect2 , #vect2{
+    width: 120px;
+    bottom: -74px;
+    left: 20px;
+    position: absolute;
+}
+
+.herosect h3{
+    color: #663277;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.herosect h3 span{
+    color: #ea674a;
+}
+
+.herosect button{
+    background: linear-gradient(270deg, #9F49AB 0%, #FE6F4D 100%);
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    letter-spacing:2.5px;
+    font-weight: 700;
+    margin-top: 20px;
+    border-radius: 70px;
+    gap: 10px;
+}
+
+/* Starting position */
+.vect1, .vect2 {
+    transition: transform 1s ease-out, opacity 1s ease-out; /* Smooth transition */
+    opacity: 1; /* Ensure they start fully visible */
+  }
+  
+  /* Classes for movement and rotation */
+  .move-left {
+    transform: translateX(-100px) rotate(-15deg); /* Move left and rotate */
+    opacity: 0; /* Fade out */
+  }
+  
+  .move-right {
+    transform: translateX(100px) rotate(-15deg); /* Move right and rotate */
+    opacity: 0; /* Fade out */
+  }
+  
+
+.logosect {
+  position: relative; /* Ensure positioning for child elements */
+  transition: opacity 1s ease-in-out; /* Smooth fading */
+}
+
+.logosect-animate {
+  opacity: 0; /* Hide vectors initially */
+}
+
+/* Animation for moving to logo */
+.move-to-logo {
+  position: absolute; /* Allow free movement */
+  top: 0; /* Start from original position */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center adjustment */
+  transition: transform 1s ease-out, opacity 1s ease-out; /* Smooth transition */
+  opacity: 1; /* Start visible */
+}
+
+/* Move upward */
+.vect1.move-left {
+  animation: moveLeft 1s forwards; /* Animation to move left */
+}
+
+.vect2.move-right {
+  animation: moveRight 1s forwards; /* Animation to move right */
+}
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(0); /* Original position */
+  }
+  to {
+    transform: translate(-100px, -100px); /* Move left and up */
+  }
+}
+
+@keyframes moveRight {
+  from {
+    transform: translate(0); /* Original position */
+  }
+  to {
+    transform: translate(100px, -100px); /* Move right and up */
+  }
+}
+
+.logosect {
+    position: relative; /* Ensure positioning for child elements */
+    transition: opacity 1s ease-in-out; /* Smooth fading */
+  }
+  
+  .logosect-animate {
+    opacity: 0; 
+  }
+  
+  .move-to-logo {
+    position: absolute; 
+    top: 0;
+    left: 50%; 
+    transform: translateX(-50%); 
+    transition: transform 1s ease-out, opacity 1s ease-out;
+    opacity: 1;
+  }
+  
+ 
+  .fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Smooth transition for fading */
+  }
+  
+ 
+  @keyframes moveUp {
+    0% {
+      transform: translateY(0) rotate(0deg); 
+      opacity: 1; 
+    }
+    100% {
+      transform: translateY(-300px) rotate(5deg); 
+      opacity: 0; 
+    }
+  }
+  
+  
+  #vect1,
+  #vect2 {
+    animation: moveUp 1.5s forwards; /* Animation to move up */
+  }
+  
+  .mainlogo {
+    display: none; /* Hide by default */
+  }
+  
+  .show {
+    display: block; 
+  }
+  
+
+@media only screen and (max-width: 1000px) {
+    .herosect img{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .herosect h3{
+        font-size: 18px;
+        padding: 0px 10px;
+    }
+}
+
+
+

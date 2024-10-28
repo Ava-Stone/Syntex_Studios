@@ -1,0 +1,68 @@
+.team {
+    text-align: center;
+    padding: 50px;
+    background-image: url("../images/Animated\ Gradient\ BG.png");
+    height: 100vh;
+    padding-top: 130px;
+  }
+
+  
+  
+  .team h1{
+    font-size: 69px;
+    line-height: 86px;
+    font-weight: 700;
+    color: rgba(254, 111, 77, 1);
+    text-transform: uppercase;
+    text-align: center;
+}
+  
+  .team-members {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .member {
+    position: relative;
+    opacity: 1; /* Make all cards visible initially */
+    transform: translateY(0); /* Cards stay in position */
+    margin-top: 150px;
+  }
+
+  .member h3{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.member p{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    color: rgba(159, 73, 171, 1);
+}
+  
+  .circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #FE6F4D; /* The circle's color */
+    margin-bottom: 10px;
+    position: absolute;
+    left: 50%;
+    top: -110px;
+    transform: translateX(-50%) scale(0); /* Circle is initially invisible */
+    transition: transform 0.5s ease; /* Smooth transition for the circle */
+  }
+  
+  .show-circle {
+    transform: translateX(-50%) scale(1); /* Circle appears when active */
+  }
+  
+  .member.active .circle {
+    /* The active card's circle will be shown */
+    transform: translateX(-50%) scale(1);
+  }
+  
+  

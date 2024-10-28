@@ -1,0 +1,72 @@
+.dital{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0px;
+    background-image: url("../images/bg.png");
+    
+}
+
+.digital1{
+    width: 70%;
+    background-image: url("../images/Rectangle\ 14.png");
+    border-radius: 32px;
+    height: 700px;
+    position: relative;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+.digital2{
+    position: absolute;
+    width: 100%;
+    background: url("../images/Rectangle\ 14.png");
+    background-size: 100%;
+    border-radius: 32px;
+    height: 700px;
+    top: 70px;
+    left: -60px;
+    padding: 20px !important;
+    padding-top: 30px !important;
+}
+.digital2 h1{
+    margin-right: 30px;
+}
+.digital-cont1{
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    left: -60px;
+}
+
+.backhead{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+    color: rgba(159, 73, 171, 1);
+    text-align: right;
+}
+
+.digital-cont2{
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .dital{
+        padding: 70px 0px;
+    }
+    .digital1{
+        display: none;
+    }
+    .digital-cont2{
+        display: flex;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .digital-cont2{
+        width: 95%;
+    }
+}

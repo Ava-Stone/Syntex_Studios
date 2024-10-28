@@ -1,0 +1,147 @@
+.webCard{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.webcard-cont{
+    background:url("../images//Rectangle\ 14.png");
+    background-size: 100%;
+    padding: 50px 20px;
+    border-radius: 32px;
+}
+
+.mainheading{
+    color: rgba(254, 111, 77, 1) !important;
+    font-size: 69px !important;
+    line-height: 84px !important;
+    text-align: center !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    margin-bottom: 20px !important;
+}
+
+.webCont{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.webleft{
+    width: 40%;
+}
+
+.webleft p{
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+    color:  rgba(255, 255, 255, 1);
+    margin-bottom: 30px;
+    padding-right: 10px;
+}
+
+.webleft ul{
+    padding: 0px 20px;
+}
+
+.webleft ul li{
+    color: #7D84D9;  
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.webRight{
+    width: 40%;
+    
+}
+
+.webRight h3{
+    color:  #7D84D9;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.webRightCont ul{
+    display: flex;
+    gap: 2px;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.webRightCont ul div{
+    width: 45%;
+    margin: 5px 0px;
+}
+.webRightCont ul div li{
+    color: #ea674a;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.webRightCont ul div p{
+    color: #7D84D9;
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 400;
+}
+
+.circlebtn{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circlebtn button{
+    /* background: rgba(254, 111, 77, 1); */
+    color:  rgba(255, 255, 255, 1);
+    border-radius: 50% !important;
+    border: none;
+    outline: none;
+    width: 110px !important;
+    height: 110px !important;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1000px) {
+    .webleft{
+        width: 100%;
+    }
+    .webRight{
+        width: 100%;
+    }
+    .webcard-cont h1{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .webleft{
+        width: 100%;
+    }
+    .webRight{
+        width: 100%;
+    }
+    .webcard-cont h1{
+        font-size: 30px;
+    }
+    .webcard-cont{
+        width: 85% !important;
+    }
+}
